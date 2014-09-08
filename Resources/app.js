@@ -87,6 +87,7 @@ function draw() {
     fld.addEventListener("change", function(e) {
         if (e.value.length == 5) {
             e.source.blur();
+            data.postalCode = e.value;
             btn.show();
         } else {
             btn.hide();
